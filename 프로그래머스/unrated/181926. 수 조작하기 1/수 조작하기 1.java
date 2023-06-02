@@ -1,21 +1,16 @@
 class Solution {
     public int solution(int n, String control) {
-        
-        for(int i = 0; i < control.length(); i++)
-            switch(control.charAt(i)){
-            case 'w':
+        for (int i = 0; i < control.length(); i++) {
+            char ch = control.charAt(i);
+            if (ch == 'w') {
                 n += 1;
-                break;
-            case 's':
+            } else if (ch == 's') {
                 n -= 1;
-                break;
-            case 'd':
+            } else if (ch == 'd') {
                 n += 10;
-                break;
-            case 'a':
+            } else if (ch == 'a') {
                 n -= 10;
-                break;
-    
+            }
         }
         return n;
     }
