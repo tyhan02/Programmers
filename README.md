@@ -1,4 +1,2 @@
 # Programmers + Baekjoon
 
-
-//
